@@ -1,0 +1,18 @@
+{
+  "name": "legoland",
+  "version": "1.0.0",
+  "description": "Set of reusable webcomponents",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webcomponents",
+    "css"
+  ],
+  "author": "Vincent Agnano <vinyll>",
+  "license": "ISC",
+  "dependencies": {
+    "@polight/lego": "^1.1.1"
+  }
+}

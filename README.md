@@ -14,7 +14,7 @@ The only thing to do is to include the components and use them; it's just HTML!
 Use the webcomponents in your HTML page:
 
 ```html
-<script type="module" src="https://cdn.jsdelivr.net/gh/polight/legoland@/dist/index.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/gh/polight/legoland/dist/index.js"></script>
 
 <stacked-cards angle="3">
   <p>1</p>

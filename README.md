@@ -4,7 +4,10 @@ A set of basic Web-Components usable anywhere with no installation.
 
 The webcomponents available are about layout and widget inspired from https://csslayout.io/patterns.
 
-Right now the [Stacked Cards](https://csslayout.io/patterns/stacked-cards) and [Holy Grail](https://csslayout.io/patterns/holy-grail) are implemented.
+As of today the following components are available:
+- [Safe HTML](./bricks/safe-html.html): integrate dynamic unescaped HTML string
+- [Stacked Cards](./bricks/stacked-cards.html): UI cards display
+- [Holy Grail](./bricks/holy-grail.html): UI layout with sticky footer and header
 
 
 ## Usage
@@ -32,9 +35,21 @@ Use the webcomponents in your HTML page:
 </style>
 ```
 
+## Advanced Usage
+
+You may include all components calling https://cdn.jsdelivr.net/gh/polight/legoland/dist/index.js.
+
+If you'd rather pick a selection of components you can include the script
+directly from _/dist_. Eg: `<script type="module" src="https://cdn.jsdelivr.net/gh/polight/legoland/dist/safe-html.js"></script>` to call the _safe-html_ component.
+
+
+## Building Legoland
+
+1. install the lego dependency: `npm i`
+2. create your own component in the bricks folder (view [Lego](https://github.com/polight/lego) doc)
+3. build it: `npm run build` (or `npm run dev` if you want an auto-refresh)
+
 
 ## About
 
-These components were originally written in lego.
-
-Written in [Lego](https://github.com/polight/lego)
+These components were originally written in [Lego](https://github.com/polight/lego).

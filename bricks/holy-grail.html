@@ -22,6 +22,9 @@ Example:
 </template>
 
 <style>
+  :host {
+    display: block;
+  }
   root {
     display: flex;
     flex-direction: column;
@@ -37,9 +40,5 @@ Example:
   }
   slot[name="center"] {
     flex-grow: 1;
-  }
-  slot[name="left"],
-  slot[name="right"] {
-    width: 25%;
   }
 </style>

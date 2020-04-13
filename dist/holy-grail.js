@@ -14,7 +14,10 @@ class HolyGrail extends Component {
   }
   get vstyle() {
     return ({ state }) => h('style', {}, `
-    root {
+    :host {
+    display: block;
+  }
+  root {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -29,10 +32,6 @@ class HolyGrail extends Component {
   }
   slot[name="center"] {
     flex-grow: 1;
-  }
-  slot[name="left"],
-  slot[name="right"] {
-    width: 25%;
   }
   `)}
   

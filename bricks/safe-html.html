@@ -1,0 +1,15 @@
+<!--
+Insert unescape HTML content in a component.
+This must not be used from data coming from a third party as it is
+a high risk of XSS attack.
+
+Example:
+
+const textWithHtml = 'this is <strong>awesome</strong>!'
+return `<p><safe-html>${textWithHtml}</safe-html></p>`
+-->
+<script>
+  connected() {
+    this.document.innerHTML = this.document.host.textContent
+  }
+</script>
